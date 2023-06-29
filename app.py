@@ -1,9 +1,14 @@
 import streamlit as st
+import os
+import ee
 from multiapp import MultiApp
 from apps import home, basemaps, customize, datasets, opacity, nlcd_demo, NEON
 
 st.set_page_config(layout="wide")
 
+#SET EARTH ENGINE TOKEN
+os.environ["EARTHENGINE_TOKEN"] = "/Users/benweinstein/.config/gcloud/application_default_credentials.json"
+ee.Initialize()
 
 apps = MultiApp()
 

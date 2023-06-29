@@ -9,9 +9,7 @@ This repo demostrates how to build a multi-page [Earth Engine](https://earthengi
 
 ### Where to find your Earth Engine token?
 
-- **Windows:** `C:/Users/USERNAME/.config/earthengine/credentials`
-- **Linux:** `/home/USERNAME/.config/earthengine/credentials`
-- **macOS:** `/Users/USERNAME/.config/earthengine/credentials`
+After gcloud auth login, set earth engine token in app.py to 'EARTHENGINE_TOKEN'
 
 ## Credits
 
